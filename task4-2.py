@@ -9,7 +9,7 @@ class BankAccount:
 
     @property
     def balance(self):
-      
+      """для получения баланса."""
        return self._balance
 
     def deposit(self, amount):
