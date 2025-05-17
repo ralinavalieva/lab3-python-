@@ -9,7 +9,7 @@ class BankAccount:
 
     @property
     def balance(self):
-       """геттер для получения текущего баланса."""
+      
        return self._balance
 
     def deposit(self, amount):
