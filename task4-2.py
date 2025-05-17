@@ -5,7 +5,7 @@ class BankAccount:
     def __init__(self, initial_balance=0.0):
        """инициализация банковского счета."""
        self._balance = initial_balance
-       self._transactions = []
+       self._transactions = [] #записыв транзакцию в список
 
     @property
     def balance(self):
@@ -22,7 +22,7 @@ class BankAccount:
 
     def withdraw(self, amount):
        """снимает деньги со счета и логирует операцию."""
-       if amount > 0 and amount <= self._balance:
+       if amount > 0 and amount <= self._balance: #если amount бол 0 то к тек бал self.balance прибавл знач amount
            self._balance -= amount
            self._transactions.append(f"снятие: {amount}")
            return True
